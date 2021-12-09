@@ -1,7 +1,7 @@
-package com.example.service;
+package com.example.services;
 
 import com.example.config.FileStorageProperties;
-import com.example.exception.FileStorageException;
+import com.example.exceptions.FileStorageException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;

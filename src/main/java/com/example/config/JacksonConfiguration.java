@@ -1,6 +1,7 @@
 package com.example.config;
 
 import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
@@ -22,7 +23,7 @@ public class JacksonConfiguration {
     public Jackson2ObjectMapperBuilder jackson2ObjectMapperBuilder(){
 
         final Jackson2ObjectMapperBuilder builder = new Jackson2ObjectMapperBuilder()
-                .propertyNamingStrategy(PropertyNamingStrategy.SNAKE_CASE)
+                .propertyNamingStrategy(PropertyNamingStrategies.SNAKE_CASE)
                 .timeZone(TimeZone.getTimeZone("UTC"))
                 .simpleDateFormat(dateTimeFormat)
                 .featuresToEnable(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES)

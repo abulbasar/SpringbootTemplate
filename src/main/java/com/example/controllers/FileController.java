@@ -1,8 +1,8 @@
-package com.example.controller;
+package com.example.controllers;
 
 
-import com.example.response.UploadFileResponse;
-import com.example.service.FileStorageService;
+import com.example.responses.UploadFileResponse;
+import com.example.services.FileStorageService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
