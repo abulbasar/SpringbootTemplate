@@ -16,9 +16,6 @@ public abstract class BaseEntity {
     public static final Sort SORT_BY_CREATED_AT_DESC =
             Sort.by(Sort.Direction.DESC, "createdAt");
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 

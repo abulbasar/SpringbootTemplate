@@ -1,6 +1,6 @@
 # Create docker image for postgresql
 ```
-$ docker run -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -d -p 5432:5432 postgres
+docker run -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -d -p 5432:5432 postgres
 ```
 docker inspect <container Id>
 nc -vz localhost 5432

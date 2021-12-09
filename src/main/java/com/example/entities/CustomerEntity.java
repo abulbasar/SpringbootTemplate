@@ -16,9 +16,9 @@ public class CustomerEntity extends BaseEntity{
 
     public final static String TABLE_NAME = "customer";
 
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
-//    private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     @Column(name = "firstname")
     private String firstName;
